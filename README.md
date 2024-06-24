@@ -1,6 +1,7 @@
 # Indian Agriculture Data Analysis
 
 Project Link : https://manufac-analytics-sde-assignment-cuve.netlify.app/
+
 This project performs data analysis on the Indian Agriculture dataset provided by the National Data and Analytics Platform (NITI Aayog) and displays the results in tables using React and Mantine.
 
 ## Prerequisites
