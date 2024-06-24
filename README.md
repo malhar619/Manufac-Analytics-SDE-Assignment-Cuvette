@@ -99,14 +99,14 @@ Here are screenshots of the tables displayed by the application:
   <img src="screenshots/1.png" alt="Image 1" width="200"/>
   <img src="screenshots/3.png" alt="Image 3" width="200"/>
   <img src="screenshots/4.png" alt="Image 4" width="200"/>
-  <img src="screenshots/5" alt="Image 5" width="200"/>
+  <img src="screenshots/5.png" alt="Image 5" width="200"/>
   <img src="screenshots/6.png" alt="Image 6" width="200"/>
 </p>
 
 
 ### Average Crop Yield and Cultivation Area Table
 
-![Average Crop Yield and Cultivation Area](Screenshots/2.png)
+![Average Crop Yield and Cultivation Area](screenshots/2.png)
 
 
 ### Note:
