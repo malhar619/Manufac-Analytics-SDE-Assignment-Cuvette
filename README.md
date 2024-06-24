@@ -1,46 +1,110 @@
-# Getting Started with Create React App
+# Indian Agriculture Data Analysis
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project performs data analysis on the Indian Agriculture dataset provided by the National Data and Analytics Platform (NITI Aayog) and displays the results in tables using React and Mantine.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Displays yearly crop production data with maximum and minimum production crops for each year.
+- Displays average yield and cultivation area for each crop between 1950-2020.
+- Data is processed and displayed using Mantine components.
+- No external libraries like Bootstrap, jQuery, or Lodash are used.
+- Uses Yarn for package management.
 
-### `yarn start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- TypeScript
+- React (via Create React App)
+- Yarn
+- Mantine v7
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Prerequisites
 
-### `yarn test`
+Make sure you have the following installed on your machine:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v14 or above)
+- Yarn
 
-### `yarn build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Follow these steps to get the application up and running:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the Repository:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    git clone https://github.com/your-username/indian-agriculture-data-analysis.git
+    cd indian-agriculture-data-analysis
+    ```
 
-### `yarn eject`
+2. **Install Dependencies:**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    ```bash
+    yarn install
+    ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Start the Application:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    ```bash
+    yarn start
+    ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+    This will start the development server and automatically open the application in your default web browser. If it doesn't open automatically, you can manually navigate to `http://localhost:3000`.
 
-## Learn More
+## Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `src/`
+  - `components/`
+    - `CropTable.tsx` - Component for displaying crop average yield and cultivation area.
+    - `YearlyTable.tsx` - Component for displaying yearly crop production data.
+  - `data/`
+    - `agricultureData.json` - The dataset used for analysis.
+  - `utils/`
+    - `dataProcessor.ts` - Contains functions for processing the dataset.
+  - `App.tsx` - The main application component.
+  - `index.tsx` - Entry point for the React application.
+  - `index.css` - Global CSS styles.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Code Explanation
+
+### `App.tsx`
+
+The main application component that:
+
+- Imports the dataset from `agricultureData.json`.
+- Uses `useEffect` to process the data using `processAgricultureData`.
+- Sets the processed data in state variables.
+- Passes the data to `YearlyTable` and `CropTable` components for rendering.
+
+### `dataProcessor.ts`
+
+Contains the `processAgricultureData` function that processes the dataset to:
+
+- Aggregate yearly crop production data.
+- Calculate average yield and cultivation area for each crop.
+
+### `YearlyTable.tsx` and `CropTable.tsx`
+
+Components that receive processed data as props and render it in tables using Mantine components.
+
+## Screenshots
+
+Here are screenshots of the tables displayed by the application:
+
+### Yearly Crop Production Table
+
+![Yearly Crop Production](screenshots/yearly_crop_production.png)
+
+### Average Crop Yield and Cultivation Area Table
+
+![Average Crop Yield and Cultivation Area](screenshots/average_crop_yield_and_area.png)
+
+## Contributing
+
+Contributions are welcome! Please create a pull request with your changes or improvements.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+If you have any questions or suggestions, feel free to open an issue or contact me at [your-email@example.com].
