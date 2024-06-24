@@ -93,15 +93,20 @@ Here are screenshots of the tables displayed by the application:
 
 ### Yearly Crop Production Table
 
-![Yearly Crop Production](Screenshots/1.png)
+# Screenshots
+
+<p align="center">
+  <img src="screenshots/1.png" alt="Image 1" width="200"/>
+  <img src="screenshots/3.png" alt="Image 3" width="200"/>
+  <img src="screenshots/4.png" alt="Image 4" width="200"/>
+  <img src="screenshots/5" alt="Image 5" width="200"/>
+  <img src="screenshots/6.png" alt="Image 6" width="200"/>
+</p>
+
 
 ### Average Crop Yield and Cultivation Area Table
 
 ![Average Crop Yield and Cultivation Area](Screenshots/2.png)
-
-### Demo video clip
-
-![Average Crop Yield and Cultivation Area](Screenshots/full_video.mp4)
 
 
 ### Note:
