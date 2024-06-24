@@ -2,21 +2,6 @@
 
 This project performs data analysis on the Indian Agriculture dataset provided by the National Data and Analytics Platform (NITI Aayog) and displays the results in tables using React and Mantine.
 
-## Features
-
-- Displays yearly crop production data with maximum and minimum production crops for each year.
-- Displays average yield and cultivation area for each crop between 1950-2020.
-- Data is processed and displayed using Mantine components.
-- No external libraries like Bootstrap, jQuery, or Lodash are used.
-- Uses Yarn for package management.
-
-## Technologies Used
-
-- TypeScript
-- React (via Create React App)
-- Yarn
-- Mantine v7
-
 ## Prerequisites
 
 Make sure you have the following installed on your machine:
@@ -48,6 +33,23 @@ Follow these steps to get the application up and running:
     ```
 
     This will start the development server and automatically open the application in your default web browser. If it doesn't open automatically, you can manually navigate to `http://localhost:3000`.
+## Features
+
+- Displays yearly crop production data with maximum and minimum production crops for each year.
+- Displays average yield and cultivation area for each crop between 1950-2020.
+- Data is processed and displayed using Mantine components.
+- No external libraries like Bootstrap, jQuery, or Lodash are used.
+- Uses Yarn for package management.
+
+## Technologies Used
+
+- TypeScript
+- React (via Create React App)
+- Yarn
+- Mantine v7
+
+
+
 
 ## Project Structure
 
@@ -91,20 +93,17 @@ Here are screenshots of the tables displayed by the application:
 
 ### Yearly Crop Production Table
 
-![Yearly Crop Production](screenshots/yearly_crop_production.png)
+![Yearly Crop Production](Screenshots/1.png)
 
 ### Average Crop Yield and Cultivation Area Table
 
-![Average Crop Yield and Cultivation Area](screenshots/average_crop_yield_and_area.png)
+![Average Crop Yield and Cultivation Area](Screenshots/2.png)
 
-## Contributing
+### Demo video clip
 
-Contributions are welcome! Please create a pull request with your changes or improvements.
+![Average Crop Yield and Cultivation Area](Screenshots/full_video.mp4)
 
-## License
 
-This project is licensed under the MIT License.
+### Note:
 
-## Contact
-
-If you have any questions or suggestions, feel free to open an issue or contact me at [your-email@example.com].
+This is simple UI. Using simple css it can be converted into great user interactive.
